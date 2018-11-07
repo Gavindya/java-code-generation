@@ -15,7 +15,8 @@ import java.util.List;
 
 public class UsingJavaPoet {
     public static void main(String[] args) throws IOException {
-        FieldSpec namesField = FieldSpec.builder(ParameterizedTypeName.get(List.class, String.class), "names", Modifier.PRIVATE)
+        FieldSpec namesField = FieldSpec
+                .builder(ParameterizedTypeName.get(List.class, String.class), "names", Modifier.PRIVATE)
                 .build();
 
         MethodSpec sampleClassConstructor = MethodSpec.constructorBuilder()
